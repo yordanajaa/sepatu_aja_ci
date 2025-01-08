@@ -9,46 +9,48 @@
 </head>
 <body>
     <div class="d-flex">
-        <!-- Sidebar -->
         <nav class="bg-dark text-white p-3 vh-100" style="width: 250px;">
             <h4 class="text-center mb-4">Menu</h4>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                    <a href="<?= base_url('index.php/crud/users'); ?>" class="nav-link text-white">
-                        <i class="fas fa-home"></i> Daftar Pengguna
-                    </a>
+                    <a href="<?php echo base_url('index.php/crud/awal'); ?>" class="nav-link text-white">
+                        <i class="fas fa-home"></i> Daftar Barang                    </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="<?= base_url('index.php/crud/tambah'); ?>" class="nav-link text-white">
+                    <a href="<?php echo base_url('index.php/crud/tambah'); ?>" class="nav-link text-white">
                         <i class="fas fa-plus"></i> Tambah Barang
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="<?= base_url('index.php/crud/tambah_t'); ?>" class="nav-link text-white">
+                    <a href="<?php echo base_url('index.php/crud/transaksi'); ?>" class="nav-link text-white">
+                        <i class="fas fa-shopping-cart"></i> Daftar Transaksi
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="<?php echo base_url('index.php/crud/tambah_t'); ?>" class="nav-link text-white">
                         <i class="fas fa-plus"></i> Tambah Transaksi
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="<?= base_url('index.php/crud/transaksi'); ?>" class="nav-link text-white">
-                        <i class="fas fa-shopping-cart"></i> Transaksi
+                    <a href="<?php echo base_url('index.php/crud/users'); ?>" class="nav-link text-white">
+                        <i class="fas fa-user"></i> Daftar Pengguna
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="<?= base_url('index.php/crud/tambah_user'); ?>" class="nav-link text-white">
+                    <a href="<?php echo base_url('index.php/crud/tambah_user'); ?>" class="nav-link text-white">
                         <i class="fas fa-user-plus"></i> Tambah User
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="<?= base_url('index.php/crud/logout'); ?>" class="nav-link text-white">
+                    <a href="<?php echo base_url('index.php/crud/logout'); ?>" class="nav-link text-white">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <!-- Main Content -->
         <div class="container p-4">
-            <h2 class="mb-4">Daftar Transaksi</h2>
+            <h3 class="text-center mb-4">Daftar Transaksi</h2>
             <div class="table-responsive">
                 <table class="table table-striped table-bordered">
                     <thead class="table-dark">
